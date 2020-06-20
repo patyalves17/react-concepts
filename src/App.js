@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import Header from './components/Header';
 
+import './App.css';
+import backgrounImage from './assets/background.jpg';
+
 function App() {
   const [projects, setProjects] = useState([
     'Desenvolvimento de app',
@@ -19,6 +22,11 @@ function App() {
           <li>Projects</li>
         </ul>
       </Header>
+
+      <figure>
+        <img width={300} src={backgrounImage} />
+        <figcaption>Photo by Valentina Locatelli on Unsplash</figcaption>
+      </figure>
 
       <p>Estate</p>
       <ul>
